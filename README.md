@@ -13,13 +13,13 @@ In this project I built an interactive dashboard to explore the Belly Button Bio
 
 ## Tools
 - Javascript
-- d3
+- D3
 - HTML
 - Plotly
 
 ## Key Steps
 #### **JSON Data**
-Used D3 to read in sample JSON data from the following url: https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json
+Used D3 to read in sample JSON data from a sample [url](https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json).
 
 --------------------------------------------------- 
 #### **Horizontal Bar Chart**
