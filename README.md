@@ -5,8 +5,10 @@
 - [Tools](#tools)
 - [Key Steps](#key-steps)
    - [JSON Data](#json-data)
+   - [Populated Dropdown](#populated-dropdown)
    - [Horizontal Bar Chart](#horizontal-bar-chart)
    - [Metadata](#metadata)
+   - [Bonus](#bonus)
  
 ## About
 In this project I built an interactive dashboard to explore the Belly Button Biodiversity dataset, which catalogs the microbes that colonize human navels.
@@ -29,15 +31,15 @@ function init() {
         
 `````
 --------------------------------------------------- 
-#### **Populated the dropdown menu**
+#### **Populated Dropdown**
  The dropdown menu had options for 150 IDS from individuals in the sample data.
-``
+```
      let dropdown = d3.select("#selDataset");
         // Add options to the dropdown menu
         data.names.forEach((name) => {
             dropdown.append("option").text(name).property("value", name);
         });
-``
+```
 --------------------------------------------------- 
 #### **Horizontal Bar Chart**
 Created a horizontal bar chart with a dropdown menu to display the top 10 microbial species (also called operational taxonomic units, or OTUs) found in each sample individual.
@@ -55,12 +57,14 @@ Created a bubble chart that displayed the OTU values for each selected individua
 Showed demographic data for each selected individual, displayed as key:value pairs.
 
 <img src="images/Metadata.png" width="150" height="250">
+
 --------------------------------------------------- 
-####**BONUS**
-Created a gauge chart that displayed the weekly washing frequency of the selected individual. The data was filtered from the `metadata.wfreq`.
+#### **Bonus**
+Created a gauge chart that displayed the weekly washing frequency of the selected individual. The data was filtered from<br>
+`metadata.wfreq` in the json data.
 The example gauge code was modified to account for values ranging from 0 through 9.
 
-<img src"images/GaugeDial.png">
+<img src="images/GaugeDial.png">
 
 
 
